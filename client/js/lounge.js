@@ -113,9 +113,9 @@ window.vueMounted = () => {
 			const {channel: lastChannel} = vueApp.activeChannel;
 
 			// If user clicks on the currently active channel, do nothing
-			if (channel && lastChannel === channel.channel) {
-				return;
-			}
+			//if (channel && lastChannel === channel.channel) {
+			//	return;
+			//}
 
 			if (lastChannel.messages.length > 0) {
 				lastChannel.firstUnread = lastChannel.messages[lastChannel.messages.length - 1].id;

@@ -93,6 +93,7 @@ export default {
 
 			const condensed = [];
 			let lastCondensedContainer = null;
+			let tempCondensedContainer = null;
 
 			for (const message of this.channel.messages) {
 				// If this message is not condensable, or its an action affecting our user,
